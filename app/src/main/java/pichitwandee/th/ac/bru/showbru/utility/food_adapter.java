@@ -48,7 +48,7 @@ public class food_adapter extends BaseAdapter{
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view1 =layoutInflater.inflate(R.layout.listview_food,ViewGroup,false);
+        View view1 =layoutInflater.inflate(R.layout.listview_food,viewGroup,false);
 
         TextView FoodTextView = view.findViewById(R.id.txtFood);
         TextView priceTextView = view.findViewById(R.id.txtPrice);
