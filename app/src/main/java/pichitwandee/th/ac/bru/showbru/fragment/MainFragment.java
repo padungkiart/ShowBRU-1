@@ -97,8 +97,12 @@ public class MainFragment extends Fragment{
                                     "No User in my Database");
 
                         } else if (passwordString.equals(truePass)) {
-                            Toast.makeText(getActivity(),"Wellcome"+ nameUser,
+                            Toast.makeText(getActivity(),"Welcome"+ nameUser,
                                     Toast.LENGTH_SHORT).show();
+                            getActivity().getSupportFragmentManager()
+                                    .beginTransaction()
+                                    .replace(R.id.contentMainFragment, new ServiceFragment())
+                                    .commit();
 
                         } else {
                             myAlert.namalDialog("Password False",
